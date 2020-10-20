@@ -159,6 +159,7 @@ img {
         padding-top: 0;
         padding-bottom: 25px;
         overflow: visible;
+        background-position: top;
     }
     
     .faq-image{

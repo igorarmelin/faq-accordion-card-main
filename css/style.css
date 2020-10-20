@@ -64,8 +64,8 @@ img {
     align-items: center;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-position: -567px -285px;
-    overflow: hidden;
+    background-position: -560px -285px;
+    position: relative;
     
     padding: 70px 0px 80px 0px;
     border-radius: 25px;
@@ -75,10 +75,25 @@ img {
     background-color: #FFF;
 }
 
+.faq::after {
+    content: url(../images/illustration-box-desktop.svg);
+    position: absolute;
+    top: 235px;
+    left: -92px;
+}
+
+.image {
+    overflow: hidden;
+}
+
 .faq-image {
     flex: 1 1 1;
     margin-left: -75px;
     margin-right: 85px;
+}
+
+.faq-image-mobile{
+    display: none;
 }
 
 .faq-menu {
@@ -152,27 +167,41 @@ img {
     margin-top: 75px;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1000px) {
+    body {
+        padding: 125px 25px 25px 25px;
+    }
+
     .faq {
         flex-direction: column;
-        margin: 15px;
         padding-top: 0;
         padding-bottom: 25px;
         overflow: visible;
-        background-position: top;
+        background-position: center -850px;
+    }
+
+    .faq::after {
+        display: none;
+    }
+
+    .image {
+        overflow: visible;
     }
     
     .faq-image{
-        margin: 0;
-        max-width: 240px;
-        margin-top: -50px;
+        display: none;
+    }
+
+    .faq-image-mobile {
+        display: block;
+        margin-top: -105px;
         margin-bottom: 50px;
     }
 
     .faq-menu {
         margin: 0;
         max-width: 100%;
-        padding: 0 45px;
+        padding: 0 25px;
     }
 
     .faq-menu h1 {
@@ -184,6 +213,6 @@ img {
     }
 
     .attribution {
-        margin-top: 0;
+        margin-top: 25;
     }
 }

@@ -1,3 +1,7 @@
+# Acessar o projeto
+
+https://faq-accordion-card-main-lovat.vercel.app/
+
 # Frontend Mentor - FAQ Accordion Card
 
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
